@@ -1,112 +1,28 @@
 <!doctype html>
-<html lang="en">
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Directorio de Contactos</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="contenedor">
+      <h1>Directorio de Contactos</h1>
 
-<head>
-	<meta charset="UTF-8" />
-	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-	<title>Empezamos con el CSS</title>
+      <input type="text" id="input-nombre" placeholder="Nombre" />
+      <input type="text" id="input-telefono" placeholder="Teléfono" />
+      <button id="btn-agregar">Agregar</button>
 
-	<!-- Hoja de estilos externa que define la apariencia de la página. -->
-	<link rel="stylesheet" href="style.css" />
-	
+      <input type="text" id="input-buscar" placeholder="Buscar contacto por nombre..." />
 
-</head>
+      <ul id="lista-contactos"></ul>
 
-<body>
-	<!-- Indicador visual del progreso de desplazamiento de la página. -->
-	<div class="progress-bar" id="progress"></div>
+      <p id="mensaje-vacio">Todavia no agregaste contactos.</p>
 
-	<!-- Encabezado con el logotipo, los enlaces de navegación y las acciones. -->
-	<header>
-		<nav>
-			<!-- Logotipo de la página. -->
-			<a href="#" class="logo"> <span class="logo-icon">👏</span> CSS 🖥️ </a>
+      <hr />
+      <p id="contador">Contactos: 0</p>
+    </div>
 
-			<!-- Enlaces que llevan a las diferentes secciones de la página. -->
-			<ul class="nav-links">
-				<li><a href="#">Inicio</a></li>
-				<li><a href="#programs">Programas</a></li>
-				<li><a href="#about">Sobre nosotros</a></li>
-				<li><a href="#pricing">Precios</a></li>
-				<li><a href="#contact">Contactos</a></li>
-			</ul>
-
-			<!-- Iconos de acciones rápidas: búsqueda y carrito. -->
-			<div class="nav-actions">
-				<div class="nav-icon">🔍</div>
-				<div class="nav-icon">🛒</div>
-			</div>
-		</nav>
-	</header>
-
-	<!-- Contenido principal de la página. -->
-	<main>
-		<!-- Sección principal de presentación del curso de CSS. -->
-		<section class="hero" id="home">
-			<!-- Texto decorativo de fondo. -->
-			<p class="hero-bg-text">ESTILOS</p>
-			<div class="hero-left">
-				<!-- Etiqueta, título y descripción principal. -->
-				<p class="hero-tag">🌟 MEJORES ESTILOS DE CSS</p>
-				<h1 class="hero-title">
-					EMPEZAMOS CON EL CSS <br />
-					<span> LUCIR BIEN </span>
-				</h1>
-				<p class="hero-sub">
-					Con <strong>CSS</strong> podemos mejorar la apariencia de nuestra página web
-					y hacerla más atractiva para los usuarios.
-				</p>
-
-				<!-- Botones de llamada a la acción. -->
-				<div class="btn-group">
-					<a href="#" class="btn-primary">Empezar</a>
-					<a href="#" class="btn-secondary">Más información</a>
-				</div>
-
-				<!-- Datos destacados sobre el contenido y la comunidad. -->
-				<div class="hero-stats">
-					<div>
-						<p class="stat-num">28</p>
-						<p class="stat-label">Programa de CSS</p>
-					</div>
-					<div>
-						<p class="stat-num">180+</p>
-						<p class="stat-label">Miembros </p>
-					</div>
-					<div>
-						<p class="stat-num">120+</p>
-						<p class="stat-label">Comentarios</p>
-					</div>
-				</div>
-			</div>
-
-			<!-- Imagen principal y distintivo que invita a desplazarse. -->
-			<div id="hero-right">
-				<div class="hero-img-container">
-					<div class="hero-img-bg">
-						<img src="imagen-recurso.png" alt="imagen">
-					</div>
-
-					<!-- Distintivo circular construido con SVG. -->
-					<div class="scroll-badge">
-						<svg viewBox="0 0 80 80">
-							<defs>
-								<path id="circle" d="M 40,40 m -27,0 a 27,27 0 1,1 54,0 a 27,27 0 1,1 -54,0" />
-							</defs>
-							<text fill="#8aab90" font-size="10" font-family="Barlow" letter-spacing="2.8">
-								<textPath href="#circle">
-									DESLIZA HACIA ABAJO
-								</textPath>
-							</text>
-						</svg>
-						<span class="scroll-arrow">
-							↓
-						</span>
-					</div>
-				</div>
-			</div>
-		</section>
-	</main>
-</body>
-
+    <script src="script.js"></script>
+  </body>
 </html>
